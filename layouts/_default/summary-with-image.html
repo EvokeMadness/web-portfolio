@@ -18,7 +18,17 @@
       {{ if $featured_image }}
           {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
         <div class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3-ns" "pr3-ns" }} mb4 mb0-ns w-100 w-40-ns">
-            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+<!--            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">-->
+            	 <x3d> 
+                    <scene> 
+                        <shape> 
+                            <appearance> 
+                                  <material diffuseColor='1 0 0'></material> 
+                            </appearance> 
+                            <box></box> 
+                        </shape> 
+                    </scene> 
+                </x3d>
         </div>
       {{ end }}
     </div>
